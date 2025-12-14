@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+    font-family: "Montserrat", serif;
+}
+
+.mainContainer {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.div{
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    position: relative;
+    padding: 30px;
+    font-family: "Montserrat", serif;
+}
+
+.bordertext{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.field{
+    position: relative;
+}
+
+.field .fieldtext{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.form{
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.h2{
+    font-weight: 500;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 7px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+    border: 2px solid black;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.row{
+    margin-bottom: 15px;
+}
+.col{
+    margin-bottom: 0;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE (≤ 767px)
+================================ */
+
+@media (max-width: 767px) {
+    .div {
+        padding: 10px; /* reduce padding */
+        border-width: 1px; /* thinner border */
+    }
+
+    .bordertext {
+        font-size: 12px;
+        top: -8px;
+        left: 8px;
+        padding: 0 3px;
+    }
+
+    .field .fieldtext {
+        font-size: 12px;
+        top: -8px;
+        left: 8px;
+        padding: 0 3px;
+    }
+
+    .form {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%; /* button fills width */
+        padding: 10px 0;
+        font-size: 16px;
+        margin: 10px auto 0; /* spacing from other elements */
+    }
+
+    .row {
+        margin-bottom: 10px;
+        flex-direction: column; /* if rows are flex items */
+        gap: 8px;
+    }
+
+    .col {
+        margin-bottom: 8px;
+    }
+
+    .error {
+        font-size: 11px;
+        margin-top: 3px;
+    }
+    .mainContainer{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

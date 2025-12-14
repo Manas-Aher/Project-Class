@@ -1,0 +1,124 @@
+/* Card Layout */
+.product_card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
+  .product_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Image Styling */
+  .product_card_image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+  }
+  
+  .product_card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product_card:hover .product_card_image img {
+    transform: scale(1.05);
+  }
+  
+  /* Product Tag */
+  .product_tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #0c70da;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Details Section */
+  .product_card_details {
+    padding: 20px;
+  }
+  
+  .product_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    color: #333;
+  }
+  
+  .product_category {
+    font-size: 14px;
+    color: #999;
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .product_price {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  .product_description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Footer Section */
+  .product_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .view {
+    background-color: #0d83fd !important;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view:hover {
+    background-color: #208cffef !important;
+  }
+  
+  .product_rating {
+    font-size: 16px;
+    color: #f39c12;
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    margin-right: 5px;
+    color: #f39c12;
+  }
+  

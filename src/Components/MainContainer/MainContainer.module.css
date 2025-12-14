@@ -1,0 +1,26 @@
+.mcontainer{
+    padding: 0px 140px;
+}
+
+/* small laptop container */
+@media screen and (max-width: 120px){
+    .mcontainer{
+        padding: 0px 100px;
+    }
+}
+
+
+/* tablet version */
+@media screen and (max-width: 850px) {
+    .mcontainer{
+        padding: 0px 50px;
+    }
+}
+
+
+/* mobile version */
+@media screen and (max-width: 500px) {
+    .mcontainer{
+        padding: 0px 20px;
+    }
+}

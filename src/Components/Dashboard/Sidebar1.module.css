@@ -1,0 +1,39 @@
+@media (max-width: 640px) {
+  .image{
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 0px;
+  }
+
+  .h3 {
+    display: none;
+  } 
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.link {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .link.hover{
+    color: #0d83fd;
+
+  }
+
+  .link.active{
+    color: #0d83fd;
+  }
+
+.icon{
+  margin-right: 10px;
+}

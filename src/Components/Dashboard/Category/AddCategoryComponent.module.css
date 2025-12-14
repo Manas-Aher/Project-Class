@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.form{
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.h2{
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+
+.p{
+    font-family: "Montserrat", serif;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 7px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+    border: 2px solid black;
+    display: block;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.main{
+    padding-right: 320px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* modal css */
+  .modal_header {
+    background-color: #222;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.closeButton {
+    font-size: 1.5rem;
+    color: #ffffff; /* White color for the close button */
+    background: transparent; /* Transparent background */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+    
+.closeButton:hover {
+    transform: scale(1.2);
+}
+  
+  .modal_title {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .modal_body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .modal_message {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .main{
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main{
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main{
+        padding-right: 40px;
+    }
+}

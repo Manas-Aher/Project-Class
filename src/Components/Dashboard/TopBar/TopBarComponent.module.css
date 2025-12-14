@@ -1,0 +1,17 @@
+.topbar {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: #e6e6e6;
+  }
+  
+.btn{
+  border: none;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 5px 8px;
+  border-radius: 5px; 
+}

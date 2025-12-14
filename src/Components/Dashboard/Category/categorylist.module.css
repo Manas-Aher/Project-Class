@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  font-family: "Nunito", serif;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   DESKTOP STYLES
+================================ */
+
+.p {
+  color: rgb(0, 237, 0);
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main {
+  margin-left: 50px;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.row {
+  min-height: 53px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.row:hover {
+  background-color: #fbfbfb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  min-height: 56px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.desc {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.imag {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.btn button {
+  margin: 5px;
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.btn button:hover {
+  color: #007bff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===============================
+   TABLET (≤ 768px)
+================================ */
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .p {
+    margin-left: 20px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .desc {
+    white-space: normal;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}
+
+/* ===============================
+   MOBILE (≤ 480px)
+================================ */
+
+@media (max-width: 480px) {
+  .main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .p {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .col {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .imag {
+    height: 32px;
+    width: 32px;
+  }
+
+  .btn button {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .title {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .desc {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+   }
+}
+  

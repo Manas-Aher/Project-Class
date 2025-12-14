@@ -1,0 +1,195 @@
+/* Modal1.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.modal {
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.modalHeader {
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+    padding: 20px 40px;
+}
+
+.modalTitle {
+    font-family: "Nunito", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.modalBody {
+    text-align: center;
+    padding: 40px 50px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.imageWrapper {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.imageWrapper:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.modalDescription {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.modalFooter {
+    background-color: #fff;
+    border-top: 2px solid #eee;
+    padding: 20px 40px;
+    justify-content: center;
+}
+
+.closeButton {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.closeButton:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.closeButton:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form{
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 7px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+    border: 2px solid black;
+    display: block;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Added animation to modal open/close */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE (≤ 767px)
+================================ */
+@media (max-width: 767px) {
+    .modal {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .modalHeader {
+        padding: 15px 20px;
+    }
+
+    .modalTitle {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .modalBody {
+        padding: 20px 15px;
+    }
+
+    .imageWrapper {
+        width: 90%;
+        height: auto;
+    }
+
+    .modalDescription {
+        font-size: 16px;
+        margin: 15px 10px;
+    }
+
+    .modalFooter {
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .closeButton {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .form {
+        padding: 20px 10px;
+    }
+}
