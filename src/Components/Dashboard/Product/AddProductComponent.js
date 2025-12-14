@@ -3,7 +3,6 @@ import add from './AddProductComponent.module.css'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Row , Col } from "react-bootstrap";
-import axios from "axios";
 import { addProduct } from "../axios";
 
 const AddProductComponent = () =>{

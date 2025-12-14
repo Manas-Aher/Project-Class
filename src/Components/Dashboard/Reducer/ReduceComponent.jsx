@@ -18,7 +18,7 @@ const ReducerComponent = ({children}) => {
             .catch((error) => {
                 console.log(error);
             });
-    }, []);
+    }, [productData]);
 
     const initialState = {
         name: '',

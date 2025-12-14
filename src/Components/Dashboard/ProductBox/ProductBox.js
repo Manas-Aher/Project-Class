@@ -15,7 +15,7 @@ const ProductBox =  ({ id , productname , category , price , description , image
     return(
         <div className={product.product_card}>
             <div className={product.product_card_image}>
-            <img src={images} style={{width: "100%", height: "100%" , objectFit: "cover"}} />
+            <img alt='img' src={images} style={{width: "100%", height: "100%" , objectFit: "cover"}} />
             <span className={product.product_tag}>Sale</span>
             </div>
             <div className={product.product_card_details}>
@@ -26,6 +26,7 @@ const ProductBox =  ({ id , productname , category , price , description , image
             <p className={product.product_description}>{description}</p>
             <div className={product.product_footer}>
                 <button className={product.view} onClick={handleShowModel} >View</button>
+                <div className={product.product_rating}>⭐ {rating}</div>
                 <Modal1 
                     show={modalShow}
                     onHide={() => setModalShow(false)}

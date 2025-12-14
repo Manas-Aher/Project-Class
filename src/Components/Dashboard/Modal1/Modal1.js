@@ -19,7 +19,7 @@ const Modal1 = (props) =>{
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className={modal.modalBody}>
-                    <img src={props.product.image} className={modal.imageWrapper}></img>
+                    <img alt='img' src={props.product.image} className={modal.imageWrapper}></img>
                     <p className={modal.modalDescription}>
                         {props.product.description}
                     </p>

@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import { Row , Col } from "react-bootstrap";
 import add from './AddCategoryComponent.module.css'
 import { addCategory } from "../axios";
-import { Modal , Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import { useState } from "react";
 
 const AddCategoryComponent = () =>{

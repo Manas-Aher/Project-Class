@@ -1,7 +1,6 @@
 import {Sidebar, Menu, MenuItem, SubMenu} from "react-pro-sidebar"
 import { AiOutlineHome } from "react-icons/ai";
 import { MdCategory } from "react-icons/md";
-import React, {useState} from "react";
 import { FaList } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import { FaBoxArchive } from "react-icons/fa6";
@@ -17,7 +16,7 @@ const Sidebar1 = ({colla , padding }) => {
         <Sidebar collapsed={colla} className={classes.main}>
           <Menu>
           <div style={{display: "flex", padding: "20px"}} id="div">
-            <img className={classes.image} src={logo}></img>
+            <img alt="img" className={classes.image} src={logo}></img>
             <h3 className={classes.h3}>Manas Aher</h3>
           </div>
             <MenuItem> 

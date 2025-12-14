@@ -1,7 +1,6 @@
 import classes from "./ProductListComponent.module.css";
 import { useState } from "react";
 import { useEffect } from "react";
-import axios from 'axios';
 import { Col, Container, Row } from "react-bootstrap";
 import { FaRegEye } from "react-icons/fa";
 import { ImBin } from "react-icons/im";
